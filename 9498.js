@@ -1,7 +1,7 @@
 const fs = require('fs'); 
 const input = fs.readFileSync("input.txt").toString().trim();
 
-var a = parseInt(input);
+let a = parseInt(input);
 
 if( a >= 90){
   console.log('A');

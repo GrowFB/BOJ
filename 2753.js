@@ -1,14 +1,12 @@
 const fs = require('fs'); 
 const input = fs.readFileSync("input.txt").toString().trim();
 
-var a = parseInt(input);
+let year = parseInt(input);
 
-if( a%4 == 0){
-if( a%100 !== 0 || a%400 === 0 ){
+if(year%4 == 0 && year%100 != 0 ){
   console.log('1');
-}else{
-  console.log('0');
-}
+}else if(year%400 == 0){
+  console.log('1');
 }else{
   console.log('0');
 }
