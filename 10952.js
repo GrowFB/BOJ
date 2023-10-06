@@ -2,15 +2,13 @@ const fs = require('fs');
 const input = fs.readFileSync("input.txt").toString().trim().split("\n");
 
 
-let i = 0;
-
-while(i< input.length){
-  let num = input[i].split(" ").map(Number);
-
-  if(num[0]!= 0 && num[1]!= 0){
-    console.log(num[0]+num[1]);
-  }else{
+for(let i = 0 ; i <input.length; i++){
+   let arr = input[i].split(" ").map(Number);
+  let arr1 = parseInt(arr[0]);
+  let arr2 = parseInt(arr[1]);
+  
+  if(arr[0] == 0 || arr[1]==0){
     break;
   }
-  i++;
+  console.log(arr[0]+arr[1]);
 }

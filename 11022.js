@@ -1,14 +1,11 @@
 const fs = require('fs'); 
 const input = fs.readFileSync("input.txt").toString().trim().split("\n");
 
-let n = parseInt(input[0]);
+let num = parseInt(input[0]);
 let result = "";
 
-
-for( let i = 1 ; i < n + 1 ; i++){
-  
-    let arr = input[i].split(" ").map(Number);
-    result = arr[0] + arr[1];
-
-    console.log(`Case #${i}:`,`${arr[0]} + ${arr[1]} =`,`${result}`);
+for( let i = 1 ; i <= num  ; i++){
+    let a = input[i].split(" ").map(Number);
+    result = a[0] + a[1];
+    console.log(`Case #${i}:`,`${a[0]} + ${a[1]} =`,`${result}`);
 }

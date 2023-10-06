@@ -1,9 +1,8 @@
 const fs = require('fs'); 
 const input = fs.readFileSync("input.txt").toString().trim();
 
-let a = parseInt(input[0]);
+let num = parseInt(input);
 
-for(let i = 1 ; i<10 ; i++){
-   let r = a * i ;
-  console.log(`${a} * ${i} = ${r}`);
+for(let i = 1 ; i < 10 ; i++){
+  console.log(`${num} * ${i} = ${num*i} `);
 }
