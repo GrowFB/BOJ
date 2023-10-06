@@ -1,13 +1,11 @@
 const fs = require('fs'); 
 const input = fs.readFileSync("input.txt").toString().trim().split("\n");
 
-let n = parseInt(input[0]);
-let score = input[1].split(" ");
+let num = parseInt(input[0]);
+let sj = input[1].split(" ").map(Number);
 
-const max = Math.max(...score);
+let m = Math.max(...sj);
 let sum = 0;
-
-for(let i = 0; i <n ; i++){
-  sum += score[i]/max*100;
-}
-console.log(sum/n);
+ for(let i = 0 ; i<num; i++){
+  sum += sj[i]/m*100 ;
+ }console.log(sum/num);
