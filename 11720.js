@@ -1,13 +1,13 @@
 const fs = require('fs'); 
 const input = fs.readFileSync("input.txt").toString().trim().split("\n");
 
-let num = input[0];
-let str = input[1];
-let sum = 0;
+let n = parseInt(input[0]);
+let temp = 0;
 
-for(let i = 0 ; i < num ; i++){
-
-
-  sum += parseInt(str[i]);
+for(let i = 0 ; i < n ; i++){
   
-}console.log(sum);
+  let num = input[1].split("").map(Number);
+  
+  temp += num[i];
+
+}console.log(temp);
