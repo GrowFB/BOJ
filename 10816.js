@@ -27,7 +27,7 @@ function solution() {
     } else {
       result[key] = 1;
     }
-    console.log(result[key]);
+
   }
 
   for (let key of arr2) {
@@ -36,7 +36,7 @@ function solution() {
     } else {
       answer += 0 + " ";
     }
-    console.log(result[key]);
+
   }
 
   console.log(answer);

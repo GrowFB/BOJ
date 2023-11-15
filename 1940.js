@@ -22,5 +22,5 @@ while(start<last){
   }else if(sum > amr){
     last -= 1 ;
   }
-
+// 가장 큰수와 가장작은수를 더한것보다 기준값이 크다면 이후 가장작은수와 더하는 그 밑에 수는 의미가 없음
 }console.log(result);
