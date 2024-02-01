@@ -10,9 +10,9 @@ const dfs = (n) => {
   }
 
   for (let i = n; i <= num; i++) {
-    if (!result.includes(i)) {
+    if (result.length != length) {
       result.push(i);
-      dfs(i + 1);
+      dfs(i);
       result.pop();
     }
   }
